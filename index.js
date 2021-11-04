@@ -26,3 +26,9 @@ firstBox.addEventListener('click', function (event) {
     console.log(" -- the event target:", event.target)
     console.log(" -- current event target:", event.currentTarget)
 })
+
+var link = document.getElementById('website-link')
+link.addEventListener('click', function(event){
+    console.log("== the link was clicked")
+    event.preventDefault()
+})
